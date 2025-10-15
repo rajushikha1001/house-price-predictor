@@ -12,7 +12,7 @@ df = pd.read_csv('../data/boston.csv')
 X = df.drop('MEDV', axis=1)
 y = df['MEDV']
 
-# Handle missing values
+# Handle missing value
 imputer = SimpleImputer(strategy='mean')
 X_imputed = imputer.fit_transform(X)
 
